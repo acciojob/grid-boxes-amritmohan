@@ -2,12 +2,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#grid {
     display: grid;
-    grid-template-rows: 124px 124px 124px 124px 124px; /* 5 fixed rows */
-    grid-template-columns: 242.5px 242.5px 242.5px 242.5px; /* 4 fixed columns */
-    gap: 10px; /* Spacing between grid items */
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    grid-template-rows: 124px 124px 124px 124px 124px; /* Exactly 5 rows */
+    grid-template-columns: 242.5px 242.5px 242.5px 242.5px; /* Exactly 4 columns */
+    gap: 10px;
+    width: calc(242.5px * 4 + 30px); /* Total width (4 columns + 3 gaps) */
+    height: calc(124px * 5 + 40px); /* Total height (5 rows + 4 gaps) */
+    box-sizing: border-box; /* Prevent padding/margins from affecting size */
     color: white;
     font-size: 24px;
     font-family: Arial, sans-serif;
