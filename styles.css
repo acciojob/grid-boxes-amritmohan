@@ -1,69 +1,73 @@
-/*  your css code here. If applicable */
-#grid {
+body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px; /* Explicit heights for rows */
-    gap: 2px; /* Space between grid items */
-    background-color: green; /* Background color for the entire grid */
-    color: white; /* Text color */
+    grid-template-rows: repeat(5, 1fr); /* 5 equal rows */
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px; /* Spacing between grid items */
+    height: 100vh; /* Full viewport height */
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
     text-align: center;
-    height: 100vh; /* Adjusts height to viewport */
+    align-items: center;
+    justify-items: center;
 }
 
 #grid > div {
-    border: 2px solid white; /* Defines white borders */
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px; /* Ensures text is visible */
 }
 
 #grid > div:nth-child(1) {
-    grid-column: 1 / span 4; /* Full width in the first row */
-    grid-row: 1;
+    grid-column: 1 / 5; /* Spans all 4 columns */
+    grid-row: 1 / 2; /* Occupies the first row */
 }
 
 #grid > div:nth-child(2) {
-    grid-column: 1; /* Occupies the first column */
-    grid-row: 2 / span 3; /* Spans 3 rows */
+    grid-column: 1 / 2; /* Spans the first column */
+    grid-row: 2 / 6; /* Spans 4 rows */
 }
 
 #grid > div:nth-child(3) {
-    grid-column: 2; /* Second column */
-    grid-row: 2; /* Second row */
+    grid-column: 2 / 4; /* Spans the 2nd and 3rd columns */
+    grid-row: 2 / 3; /* Occupies the 2nd row */
 }
 
 #grid > div:nth-child(4) {
-    grid-column: 3 / span 2; /* Spans two columns */
-    grid-row: 2; /* Second row */
+    grid-column: 4 / 5; /* Occupies the 4th column */
+    grid-row: 2 / 3; /* Occupies the 2nd row */
 }
 
 #grid > div:nth-child(5) {
-    grid-column: 2; /* Second column */
-    grid-row: 3; /* Third row */
+    grid-column: 2 / 4; /* Spans the 2nd and 3rd columns */
+    grid-row: 3 / 4; /* Occupies the 3rd row */
 }
 
 #grid > div:nth-child(6) {
-    grid-column: 3 / span 2; /* Spans two columns */
-    grid-row: 3; /* Third row */
+    grid-column: 4 / 5; /* Occupies the 4th column */
+    grid-row: 3 / 4; /* Occupies the 3rd row */
 }
 
 #grid > div:nth-child(7) {
-    grid-column: 2; /* Second column */
-    grid-row: 4; /* Fourth row */
+    grid-column: 2 / 3; /* Occupies the 2nd column */
+    grid-row: 4 / 5; /* Occupies the 4th row */
 }
 
 #grid > div:nth-child(8) {
-    grid-column: 3; /* Third column */
-    grid-row: 4; /* Fourth row */
+    grid-column: 3 / 4; /* Occupies the 3rd column */
+    grid-row: 4 / 5; /* Occupies the 4th row */
 }
 
 #grid > div:nth-child(9) {
-    grid-column: 4; /* Fourth column */
-    grid-row: 4; /* Fourth row */
+    grid-column: 4 / 5; /* Occupies the 4th column */
+    grid-row: 4 / 5; /* Occupies the 4th row */
 }
 
 #grid > div:nth-child(10) {
-    grid-column: 1 / span 4; /* Full width in the last row */
-    grid-row: 5; /* Fifth row */
+    grid-column: 2 / 5; /* Spans the 2nd to 4th columns */
+    grid-row: 5 / 6; /* Occupies the 5th row */
 }
