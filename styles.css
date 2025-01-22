@@ -22,52 +22,53 @@ body {
     align-items: center;
 }
 
+/* Item positions using 'span X / auto' syntax */
 #grid > div:nth-child(1) {
-    grid-column: 1 / 5; /* Spans all 4 columns */
-    grid-row: 1 / 2; /* Occupies the first row */
+    grid-column: span 4 / auto; /* Spans 4 columns */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(2) {
-    grid-column: 1 / 2; /* Spans the first column */
-    grid-row: 2 / 6; /* Spans 4 rows */
+    grid-column: span 1 / auto; /* Spans 1 column */
+    grid-row: span 4 / auto; /* Spans 4 rows */
 }
 
 #grid > div:nth-child(3) {
-    grid-column: 2 / 4; /* Spans the 2nd and 3rd columns */
-    grid-row: 2 / 3; /* Occupies the 2nd row */
+    grid-column: span 2 / auto; /* Spans 2 columns */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(4) {
-    grid-column: 4 / 5; /* Occupies the 4th column */
-    grid-row: 2 / 3; /* Occupies the 2nd row */
+    grid-column: span 2 / auto; /* Spans 2 columns */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(5) {
-    grid-column: 2 / 4; /* Spans the 2nd and 3rd columns */
-    grid-row: 3 / 4; /* Occupies the 3rd row */
+    grid-column: span 2 / auto; /* Spans 2 columns */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(6) {
-    grid-column: 4 / 5; /* Occupies the 4th column */
-    grid-row: 3 / 4; /* Occupies the 3rd row */
+    grid-column: span 2 / auto; /* Spans 2 columns */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(7) {
-    grid-column: 2 / 3; /* Occupies the 2nd column */
-    grid-row: 4 / 5; /* Occupies the 4th row */
+    grid-column: span 1 / auto; /* Spans 1 column */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(8) {
-    grid-column: 3 / 4; /* Occupies the 3rd column */
-    grid-row: 4 / 5; /* Occupies the 4th row */
+    grid-column: span 1 / auto; /* Spans 1 column */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(9) {
-    grid-column: 4 / 5; /* Occupies the 4th column */
-    grid-row: 4 / 5; /* Occupies the 4th row */
+    grid-column: span 1 / auto; /* Spans 1 column */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
 
 #grid > div:nth-child(10) {
-    grid-column: 2 / 5; /* Spans the 2nd to 4th columns */
-    grid-row: 5 / 6; /* Occupies the 5th row */
+    grid-column: span 3 / auto; /* Spans 3 columns */
+    grid-row: span 1 / auto; /* Spans 1 row */
 }
